@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vectors – GCSE Mathematics Worksheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styling -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 2em;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 4px solid #ffb347;
+      padding-bottom: 1em;
+      margin-bottom: 2em;
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    h1 {
+      color: #6495ed;
+    }
+
+    .question {
+      background: #f0f8ff;
+      border-left: 5px solid #6495ed;
+      padding: 1em;
+      margin-bottom: 2em;
+    }
+
+    .solution {
+      background: #fff3e0;
+      padding: 1em;
+      margin-top: 1em;
+      display: none;
+    }
+
+    .button, button {
+      background: #6495ed;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      margin-top: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #4169e1;
+    }
+
+    iframe, img {
+      max-width: 100%;
+      margin-top: 1em;
+    }
+
+    footer {
+      border-top: 2px solid #ffb347;
+      text-align: center;
+      padding-top: 2em;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    @media print {
+      .no-print {
+        display: none;
+      }
+    }
+  </style>
+
+  <!-- Math rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>GCSE Mathematics</h1>
+    <p><strong>Topic:</strong> Vectors – Scale Factors</p>
+  </div>
+  <img src="images/LOGO_GLOW.png" alt="Ganes Teaches Logo">
+</header>
+
+<div class="question">
+  <h2>Question 1</h2>
+  <p>
+    Given: \( \vec{OA} = \vec{2a} \), \( \vec{OB} = \vec{2b} \), and \( M \) is the midpoint of \( OB \). <br>
+    Find the value of \( \lambda \) such that \( \vec{AD} = \lambda \vec{AB} \), if \( OAC \), \( OMB \), and \( MDC \) are straight lines.
+  </p>
+
+  <button class="no-print" onclick="document.getElementById('sol1').style.display='block';">Show Worked Solution</button>
+  <div class="solution" id="sol1">
+    <p><strong>Video Explanation:</strong></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+
+    <p><strong>Step-by-step Animation:</strong></p>
+    <img src="solutions/q1.gif" alt="GIF Solution for Q1">
+  </div>
+</div>
+
+<div class="no-print">
+  <button onclick="window.print()">🖨️ Print this Worksheet</button>
+  <a class="button" href="vectors_worksheet.pdf" download>⬇️ Download as PDF</a>
+</div>
+
+<footer>
+  © <script>document.write(new Date().getFullYear())</script> Ganes Teaches. All rights reserved. | www.ganesteaches.com
+</footer>
+
+</body>
+</html>
