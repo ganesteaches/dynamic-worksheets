@@ -10,8 +10,8 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 2em;
-      background-color: #fdfdfd;
-      color: #333;
+      background-color: #1a1a1a;
+      color: #fdfdfd;
     }
 
     header {
@@ -28,18 +28,18 @@
     }
 
     h1 {
-      color: #6495ed;
+      color: #87cefa;
     }
 
     .question {
-      background: #f0f8ff;
+      background: #2b2b2b;
       border-left: 5px solid #6495ed;
       padding: 1em;
       margin-bottom: 2em;
     }
 
     .solution {
-      background: #fff3e0;
+      background: #3c3c3c;
       padding: 1em;
       margin-top: 1em;
       display: none;
@@ -70,12 +70,25 @@
       text-align: center;
       padding-top: 2em;
       font-size: 0.9em;
-      color: #777;
+      color: #ccc;
+      margin-top: 4em;
     }
 
     @media print {
       .no-print {
         display: none;
+      }
+      body {
+        background-color: white;
+        color: black;
+      }
+      .question {
+        background: #fff;
+        border-left: 5px solid black;
+      }
+      .solution {
+        background: #f9f9f9;
+        display: block;
       }
     }
   </style>
@@ -102,24 +115,32 @@
     Given: \( \vec{OA} = \vec{2a} \), \( \vec{OB} = \vec{2b} \), and \( M \) is the midpoint of \( OB \). <br>
     Find the value of \( \lambda \) such that \( \vec{AD} = \lambda \vec{AB} \), if \( OAC \), \( OMB \), and \( MDC \) are straight lines.
   </p>
+  <img src="images/1.png" alt="Vector diagram for Question 1">
 
-  <button class="no-print" onclick="document.getElementById('sol1').style.display='block';">Show Worked Solution</button>
+  <button class="no-print" onclick="document.getElementById('sol1').style.display='block';" aria-label="Show solution to Question 1">
+    Show Worked Solution
+  </button>
+
   <div class="solution" id="sol1">
     <p><strong>Video Explanation:</strong></p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe src="https://www.youtube.com/embed/test"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+              frameborder="0" allowfullscreen></iframe>
+    </div>
 
     <p><strong>Step-by-step Animation:</strong></p>
-    <img src="solutions/q1.gif" alt="GIF Solution for Q1">
+    <img src="solutions/q1.gif" alt="GIF Solution for Question 1">
   </div>
 </div>
 
 <div class="no-print">
   <button onclick="window.print()">🖨️ Print this Worksheet</button>
-  <a class="button" href="vectors_worksheet.pdf" download>⬇️ Download as PDF</a>
+  <a class="button" href="pdf/vectors_worksheet.pdf" download>⬇️ Download as PDF</a>
 </div>
 
 <footer>
-  © <script>document.write(new Date().getFullYear())</script> Ganes Teaches. All rights reserved. | www.ganesteaches.com
+  © <script>document.write(new Date().getFullYear())</script> Ganes Teaches. All rights reserved. | <a href="https://www.ganesteaches.com" style="color: #87cefa;">www.ganesteaches.com</a>
 </footer>
 
 </body>
